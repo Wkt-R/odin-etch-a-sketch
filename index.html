@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch A Sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div><h1>Etch a Sketch</h1></div>
+    <div id="container">
+        <div id="btnContainer">
+            <input id="colorPicker" type="color" value="#333333"/>
+            <button id="colorBtn">Color Mode</button>
+            <button id="rainbowBtn">Rainbow Mode</button>
+            <button id="eraserBtn">Eraser</button>
+            <button id="resetBtn">Reset</button>
+            <div>
+            <input type="text" placeholder="Size of Board" onchange="changeSize(this.value)"/>
+            <button>Set Size</button>
+            <div class="mode"></div>
+            <div class="error">Input must be between 2 and 100</div>
+            </div>
+        </div>
+        <div class="sketch-container"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
